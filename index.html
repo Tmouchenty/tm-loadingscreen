@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <video autoplay muted loop id="bg-video">
+            <source src="assets/video.webm" type="video/webm">
+        </video>
+        <div class="overlay"></div>
+    </div>
+    <div class="content">
+        <h1>TIMMYS ROLEPLAY</h1>
+        <p class="tip">DAILY TIP</p>
+        <p class="thetip">Always be respectful of fellow roleplayers.</p>
+        <div class="loading-bar">
+            <div class="progress" id="progress"></div>
+            <p id="progress-text"></p> 
+        </div>
+        <p class="big-slash">//</p>
+        <p class="loading">LOADING</p>
+    </div>
+    <audio id="music" src="assets/music.mp3" autoplay="true" hidden="true" loop="true"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
+
